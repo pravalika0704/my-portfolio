@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/efb101fddc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+          <nav>
+            <img src = "images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Web Developer</p>
+            <h1> Hi, i'm <span>Pravalika</span><br> From India</h1>
+          </div>
+    </div>
+  </div>
+  <!----------------about--------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/pravalika2.jpg">
+
+      </div>
+      <div class="about-col-2">
+           <h1 class="sub-title"> About me</h1>
+           <p>I am pravalika.I am from Nizamabad.I have completed my bachelor's degree
+             in Information Technology from VJIT,Hyderabad.Along with my degree i have 
+             developed my programming skills in Java,Python and also i have completed sql
+             and web development courses.My hobbies are i watch various types of content
+             in youtube and in very free time i do volunteeer work,so i can be in
+             touch with the people and i can increase my network.</p>
+             <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+              <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+             </div>
+             <div class="tab-contents active-tab" id="Education">
+              <ul>
+                <li><span>B.Tech-IT-CGPA:8.9 June-2024</span><br>VJIT,Hyderabad</li>
+                <li><span>12th-Intermediate(MPC)-Percentage:94% March-2020</span><br>
+                  NRI junior college,Hyderabad</li>
+                <li><span>10th-SSC-GPA:9.2 March-2018</span><br>Gvv,Nizamabad</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="Skills">
+              <ul>
+                <li><span>Languages</span><br>Java,C,Python</li>
+                <li><span>Web Development</span><br>Html5,css,javascript</li>
+                <li><span>DB Language</span><br>Sql</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="Certifications">
+              <ul>
+                <li><span>Certification for Completion of Python 3.4.3 training by Spoken Tutorial 
+                  Project at IIT Bombay</span><br>2022</li>
+                <li><span>Java certification from Skill-up by Simplilearn</span><br>2023</li>
+                <li><span>Accenture Developer Job Simulation program (virtual internship) by Forage</span>
+                  <br>2023</li>
+              </ul>
+             </div>
+             <div class="tab-contents" id="Projects">
+              <ul>
+                <li><span>Diabetes prediction using Machine Learning with python</span><br>2023</li>
+                <li><span>Aircanvas</span><br>2023</li>
+                <li><span>Portfolio Website using HTML,CSS,JS</span><br>2024</li>
+              </ul>
+             </div>
+             
+              
+             
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------------services--------------->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Quickly Build a Website With my Unified Platform. Grow Your Business With me. 
+          Website Designs With Beautiful Themes brings you to get more clients</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>Building Machine Learning Projects</h2>
+        <p>Machine learning is the science of developing algorithms and statistical models
+           that computer systems use to perform tasks without explicit instructions, 
+           relying on patterns and inference instead. Computer systems use machine learning 
+          algorithms to process large quantities of historical data and identify data pattern</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Providing resources/study material</h2>
+        <p>Giving free material,tips,guidence etc to acheive your goals</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------------portfolio--------s--------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/web work1.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>The app connects you to the talented people around the world.
+            Download it from play store.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/ml work1.png">
+        <div class="layer">
+          <h3>Machine learning projects</h3>
+          <p>Machine Learning enables computers to learn from data and make decisions
+             or predictions without being explicitly programmed to do so.</p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/resouce work1.jpg">
+        <div class="layer">
+          <h3>Resources/Guidence</h3>
+          <p>Effective educational resources support the use of assessment to enhance learning. 
+            The main purpose of assessment is to enable learning. An essential part of 
+            assessment is the ability to give and respond to feedback. </p>
+          <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+  </div>
+
+</div>
+<!-------------contact---------->
+<div id="contact">
+    <div class="container">
+       <div class="row">
+           <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>9191919191</p>
+                <div class="social-icons">
+                  <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/pravalika.resume.pdf" download class="btn btn2" >Download CV</a>
+                
+               
+           </div>
+           <div class="contact-right"></div>
+               <form name="submit-to-google-sheet">
+                
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+       </div> 
+    </div>
+</div>
+<div class="copyright">
+  <p> Copyright @pravalika Made with <i class="fa-solid fa-heart"></i></p>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  function opentab(tabname)
+  {
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+<script>
+  var sidemenu=document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+    
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzlkeEVe-7twa5yZrKh49LwuMmVMO5-4zTDm-zvMIUZes43ZZFXW97R07PI3XWp9ixVjA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
